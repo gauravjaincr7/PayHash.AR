@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/home.css" />
+    <link rel="stylesheet" href="../static/css/camera.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.js"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>HashMine</title>
+  </head>
+  <body>
+    <!-- side nav start -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="/">Home</a>
+      <a href="/register">Register</a>
+      <a href="/camera">Camera</a>
+    </div>
+    <!-- side nav end -->
+    <div   id="popup" class="popup hide">
+        <p>Image Uploaded Successfully</p>
+        <P>Switch back tab to complete registration</P>
+    </div>
+    <div class="grid-container">
+      <div class="grid-item grid-item-1">
+        <div class="nav-icon-background" onclick="openNav()">
+          <ion-icon style="font-size: 40px" name="menu-outline"></ion-icon>
+        </div>
+        <a href="/"> <p class="logo">HashMine</p></a>
+
+        <div class="nav-icon-background">
+          <ion-icon style="font-size: 40px" name="person-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="grid-item grid-item-2">
+        <div  id="c" class="camera">
+            <video id="video">Video stream not available.</video>
+            <!-- <button >Take photo</button>  -->
+          </div>
+          <canvas id="canvas">
+          </canvas>
+          <!-- <div class="output">
+            <img id="photo" alt="The screen capture will appear in this box."> 
+          </div> -->
+
+        <div id="scan" class="scan-button-parent">
+          <div  id="startbutton" class="scan-button">
+            <ion-icon style="font-size: 35px" name="scan-sharp"></ion-icon>
+            <p class="scan-button-text">Capture Image</p>
+          </div>
+        </div>
+
+        <div id="upload" class="scan-button-parent upload-button-parent hide">
+            <div class="scan-button">
+            
+              <ion-icon  style="font-size: 35px" name="cloud-upload-outline"></ion-icon>
+              <p class="scan-button-text">Upload Image</p>
+            </div>
+          </div>
+      </div>
+      <div class="grid-item grid-item-3"></div>
+      <div class="grid-item grid-item-4"></div>
+      <div class="grid-item grid-item-5"></div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="../static/js/camera.js"></script>
+    <script src="../static/js/home.js"></script>
+  </body>
+</html>

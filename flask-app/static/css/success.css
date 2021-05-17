@@ -1,0 +1,21 @@
+.balance {
+  width: 80%;
+  height: 40px;
+  background-color: #EDC530;
+  border-radius: 5px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.balance p {
+  top: 47% !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #181818 !important;
+  font-weight: bold;
+}
+/*# sourceMappingURL=success.css.map */

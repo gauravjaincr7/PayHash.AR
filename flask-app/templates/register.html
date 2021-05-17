@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="../static/css/register.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <title>HashMine</title>
+  </head>
+  <body>
+      <!-- side nav start -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/">Home</a>
+        <a href="/register">Register</a>
+        <a href="/camera">Camera</a>
+      </div>
+      <!-- side nav end -->
+
+ 
+
+    <div class="grid-container">
+      <div class="grid-item grid-item-1">
+            <div    class="nav-icon-background" onclick="openNav()" >
+                <ion-icon  style="font-size: 40px;" name="menu-outline"></ion-icon>
+            </div>   
+            <a href="/"><p class="logo">HashMine</p></a>
+            
+
+            <div class="nav-icon-background">
+                <ion-icon   style="font-size: 40px;" name="person-outline"></ion-icon>
+            </div>   
+      </div>
+      <div class="grid-item grid-item-2">
+        <div class="container">
+           
+            <div   id="formm">
+                <form  action="/"  enctype=multipart/form-data>
+                    <ul>
+                        <li>
+                            <label for="fname" class="label" >Name:</label><br>
+                            <input type="text"   v-model="username"    name="username" class="inputfield" required><br><br>
+                        </li>
+                        <li>
+                            <label for="fname" class="label" >Phone Number:</label><br>
+                            <input type="tel"   v-model="username"    name="username" class="inputfield" required><br><br>
+                        </li>
+                        <li>
+                            <label for="fname" class="label">Pin:</label><br>
+                            <input type="number"    v-model="password"    name="password" class="inputfield"><br><br>
+                        </li>
+
+                        <li>
+                            <label for="fname" class="label">Enter Bank Details</label><br>
+                            <div  id="dd" class="scan-button bank-button"  >
+                               
+                                <p  class="scan-button-text" >Select Bank</p>
+                                <ion-icon   style="font-size: 35px;" name="chevron-down-outline"></ion-icon>
+                                
+                              </div>
+                              <br>
+                        </li>
+
+                        <li>
+                            <div  id="dm" class="dropdown-content">
+                                <a id="dm-elem" href="#">Ethereum Wallet</a>
+                                <a  id="" href="#">Nepal Bank</a>
+                                <a id="" href="#">HDFC Bank</a>
+                                <a id="" href="#">ICICI Bank</a>
+                              </div>
+                        </li>
+
+
+
+                        <li>
+                            <label for="fname" class="label">Upload Image</label><br>
+
+                            <a href="/camera" style="text-decoration: none;" target="_blank">
+                                <div class="scan-button"  >
+                               
+                                    <ion-icon  style="font-size: 35px; color: black;" name="camera-outline"></ion-icon>
+                                    <p  class="scan-button-text" >Open Camera</p>
+                                  </div>
+                            </a>
+                          
+                            
+                        </li>
+                   
+                
+                      
+                      
+                       
+                        
+                    </ul>
+                    <a href="/">
+                        <div class="submitt">
+                            <input  id="submit" type="submit" value="Sign Up" name="patient" class="signup">
+                        </div>
+                    </a>
+                    
+                   
+                </form>
+            </div>
+     
+    
+            <!-- <div class="Signup"> -->
+                
+                <!-- <a class="aa" href=""><p>Signup with us Now !</p></a> -->
+                <!-- <p  @click="route" class="aa">    <button  class="btn"> Signup with us Now ! </button> </p> -->
+            <!-- </div> -->
+        </div>
+      </div>
+      <div class="grid-item grid-item-3"></div>
+      <div class="grid-item grid-item-4"></div>
+      <div class="grid-item grid-item-5"></div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
+    
+    </script>
+    <script src="../static/js/home.js"></script>
+    <script src="../static/js/register.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  </body>
+</html>

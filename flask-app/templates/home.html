@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="../static/css/success.css"> -->
+<!-- <link rel="stylesheet" href="../static/css/ammount.css"> -->
+    
+    <title>HashMine</title>
+  </head>
+  <body>
+      <!-- side nav start -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/">Home</a>
+        <a href="/register">Register</a>
+        <a href="/camera">Camera</a>
+        
+      </div>
+      <!-- side nav end -->
+
+    <div class="grid-container">
+      <div class="grid-item grid-item-1">
+            <div    class="nav-icon-background" onclick="openNav()" >
+                <ion-icon  style="font-size: 40px;" name="menu-outline"></ion-icon>
+            </div>   
+            <a href="/"> <p class="logo">HashMine</p></a>
+           
+
+            <div class="nav-icon-background">
+                <ion-icon   style="font-size: 40px;" name="person-outline"></ion-icon>
+            </div>   
+      </div>
+      <div class="grid-item grid-item-2">
+          <div class="img">
+              <img src="../static/images/face.png" alt="">
+          </div>
+          <div class="scan-button-parent">
+              <div class="scan-button">
+                <ion-icon   style="font-size: 35px;" name="scan-sharp"></ion-icon>
+                <p  class="scan-button-text" >Scan Face to Pay</p>
+              </div>
+          </div>
+
+          <div class="balance">
+            <p style="left: 25%;" >Balance   </p>
+            <p style="left: 74%;  " > 100  <span style="font-size: 12px; font-weight: 100; margin-left: 4px;">Ether Coins</span>  </p>
+        </div>
+  
+
+
+
+      </div>
+      <div class="grid-item grid-item-3"></div>
+      <div class="grid-item grid-item-4"></div>
+      <div class="grid-item grid-item-5"></div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
+    
+    </script>
+    <script src="../static/js/home.js"></script>
+  </body>
+</html>
